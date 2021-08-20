@@ -1,0 +1,56 @@
+
+/* TODO: Write something here */
+#root{
+    width: 100%;
+    height: 70vh;
+    background-image: url("https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    position: relative; 
+    filter: contrast()
+}
+.card, .ui.pointing.menu {
+    position:'absolute';
+    background: #B9D9BC;
+    box-shadow:  
+        -20px 20px 64px #a1bda3,
+        20px -20x 64px #fbffff;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 25px;
+}
+
+.ui.pointing.menu a.item {
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.container.my-1 {
+    width: 70%
+}
+
+.btn.form-inline.btn-primary.mb-2 {
+    background: #a1bda3;
+    border: unset;
+}
+
+.btn.btn-primary.mb-2 {
+    background: #a1bda3,;
+    border: unset;
+}
+.btn.form-inline.btn-primary.mb-2 {
+    background: #a1bda3;
+    /* box-shadow:  -32px 32px 64px #a1bda3,
+             32px -32px 64px #fbffff;; */
+    border: unset;
+}
+
+.btn.btn-primary.mb-2 {
+    background: #cef2d1;
+    /* box-shadow:  -32px 32px 64px #a1bda3,
+             32px -32px 64px #fbffff; */
+    border: unset;
+}
