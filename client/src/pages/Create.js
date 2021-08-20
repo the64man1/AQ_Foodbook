@@ -13,6 +13,10 @@ const NewRecipe = () => {
 	//const id = data.me.id;
 
 	const [createRecipe] = useMutation(CREATE_RECIPE);
+	// const error = {
+	// 	on: false,
+	// 	message: "Please enter an ingredient"
+	// }
 
 	const [formData, setFormData] = useState({
 		title: "",
@@ -81,6 +85,12 @@ const NewRecipe = () => {
   };
 
 	const addIngredient = (event) => {
+		if (formData.ingredients.trim() === '') {
+			// error.on = true;
+			// console.log(error.on);
+			return;
+		}
+
 		if (localStorage.getItem("ingredients") === null) {
 			let ingredients = [];
 			ingredients.push(formData.ingredients);
@@ -126,6 +136,11 @@ const NewRecipe = () => {
 				/>
 				<Button onClick={addIngredient}>Add Ingredient</Button>
 			</label>
+			{/* {error.on = true ? (
+				<div>
+					<p>Test</p>
+				</div>
+			) : null} */}
 			<br />
 			<label>
 				Ingredients List:
