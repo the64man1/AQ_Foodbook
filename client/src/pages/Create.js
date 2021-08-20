@@ -13,10 +13,7 @@ const NewRecipe = () => {
 	//const id = data.me.id;
 
 	const [createRecipe] = useMutation(CREATE_RECIPE);
-	// const error = {
-	// 	on: false,
-	// 	message: "Please enter an ingredient"
-	// }
+	const [errorText, setErrorText] = useState('');
 
 	const [formData, setFormData] = useState({
 		title: "",
@@ -86,8 +83,7 @@ const NewRecipe = () => {
 
 	const addIngredient = (event) => {
 		if (formData.ingredients.trim() === '') {
-			// error.on = true;
-			// console.log(error.on);
+			setErrorText('Please enter an ingredient')
 			return;
 		}
 
@@ -136,11 +132,11 @@ const NewRecipe = () => {
 				/>
 				<Button onClick={addIngredient}>Add Ingredient</Button>
 			</label>
-			{/* {error.on = true ? (
+			{errorText ? (
 				<div>
-					<p>Test</p>
+					<p>{errorText}</p>
 				</div>
-			) : null} */}
+			) : null}
 			<br />
 			<label>
 				Ingredients List:
