@@ -109,7 +109,7 @@ const NewRecipe = () => {
 	};
 
 	return (
-		<form onSubmit={handleFormSubmit}>
+		<form>
 			<label>
 				Recipe name / title:
 				<Input className="form-control" name="title" type="title" id="title" onChange={handleChange} />
@@ -179,7 +179,7 @@ const NewRecipe = () => {
             </div>
             <input type="submit" value="Submit" /> */}
 			<div className="flex-row flex-end">
-				<button type="submit" className="btn btn-primary mb-2">
+				<button type="submit" className="btn btn-primary mb-2"  onClick={handleFormSubmit}>
 					Submit
 				</button>
 			</div>
