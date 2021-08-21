@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* TODO: Write something here */
 #root{
     width: 100%;
