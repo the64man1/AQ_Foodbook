@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import NewRecipe from "./pages/Create";
 import RecipeList from "./components/RecipeList";
 import Nav from './components/Nav';
+import DropdownNav from "./components/DropdownNav";
 import Profile from './pages/Profile'
 import { Container } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
@@ -48,12 +49,33 @@ const client = new ApolloClient({
 });
 
 function App() {
-	return (
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const hideMenu = () => {
+      if (window.innerWidth > 768 && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', hideMenu);
+
+    return () => {
+      window.removeEventListener('resize', hideMenu);
+    };
+  });
+
+	return ( 
     <ApolloProvider client={client}>
       <Router>
         <Container>
           <Banner />
-          <Nav />
+          <Nav toggle={toggle} />
+          <DropdownNav isOpen={isOpen} toggle={toggle} /> 
           <Switch>
             <Route exact path="/">
               <RecipeList />
