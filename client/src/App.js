@@ -4,6 +4,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from "@ap
 import { setContext } from "@apollo/client/link/context";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Banner from "./components/Banner";
 import Home from "./pages/Home";
 import NewRecipe from "./pages/Create";
 import RecipeList from "./components/RecipeList";
@@ -51,6 +52,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <Container>
+          <Banner />
           <Nav />
           <Switch>
             <Route exact path="/">
