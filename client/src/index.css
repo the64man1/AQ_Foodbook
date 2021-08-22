@@ -33,9 +33,15 @@
 
 .hero-text {
     position: relative;
-    left: 110px;
+    left: 7rem;
 }
-  
+
+.container {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 .card, .ui.pointing.menu {
     position:'absolute';
     background: #B9D9BC;
