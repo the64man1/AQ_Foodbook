@@ -3,7 +3,9 @@ import React from 'react';
 function Banner() {
     return (
         <>
-        <h1>Banner</h1>
+        <div className="hero-head">
+          <h1 className="hero-text">Foodbook</h1>
+        </div>
         </>
     )
 }
