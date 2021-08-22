@@ -11,7 +11,7 @@ import RecipeList from "./components/RecipeList";
 import Nav from './components/Nav';
 import DropdownNav from "./components/DropdownNav";
 import Profile from './pages/Profile'
-import { Container } from "semantic-ui-react";
+import { Container } from "tailwind-react-ui";
 import "semantic-ui-css/semantic.min.css";
 import { onError } from 'apollo-link-error';
 import { ApolloLink } from 'apollo-link';
@@ -72,7 +72,8 @@ function App() {
 	return ( 
     <ApolloProvider client={client}>
       <Router>
-        <Container>
+        {/* <Container className='w-screen'> */}
+        <div className="container">
           <Banner />
           <Nav toggle={toggle} />
           <DropdownNav isOpen={isOpen} toggle={toggle} /> 
@@ -100,7 +101,8 @@ function App() {
               <NewRecipe />
             </Route>
           </Switch>
-        </Container>
+        </div>
+        {/* </Container> */}
       </Router>
     </ApolloProvider>
   );
