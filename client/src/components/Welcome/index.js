@@ -18,13 +18,9 @@ const Welcome = () => {
             Checkout the Foodbook for recipes!
           </p>
         ) : (
-          <p style={{ textAlign: "center", width: "100%", fontSize: '32px',  lineHeight: "18rem", color: "white" 
+          <p style={{ textAlign: "center", width: "100%", fontSize: '1.5rem',  lineHeight: "3rem", color: "white" 
           }}>
-            foodBook...
-            <br></br>
-       
-            Your digital cookbook. 
-           Login and search, save, share and even add your recipes. 
+            Foodbook, the user-created cookbook! Login and share your favorite recipes! 
           </p>
         )}
       </Container>
