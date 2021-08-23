@@ -62,10 +62,9 @@ function RecipeList() {
 	console.log(recipeData);
 
 	return (
-		<div className="my-2">
+		<div className="space-y-5">
 			<Welcome />
-			<h2>The Foodbook Recipes:</h2>
-			<div className="flex-row">
+			<div className="flex-row space-y-5">
 				{recipeData.map((recipe) => (
 					<RecipeItem
 						key={recipe.id}
