@@ -93,27 +93,27 @@ function Nav({ toggle }) {
       </svg>
     </div>
     <div className='pr-8 md:block  hidden'>
-      <Link to='/' className='p-4'>
+      <Link to='/' className='p-4 hover:bg-yellow-300'>
         Home
       </Link>
       {Auth.loggedIn() ? (
         <>
-        <Link to='/create-recipe' className='p-4'>
+        <Link to='/create-recipe' className='p-4 hover:bg-yellow-300'>
           Create Recipe
         </Link>
-        <Link to='/profile' className='p-4'>
+        <Link to='/profile' className='p-4 hover:bg-yellow-300'>
           Profile
         </Link>
-        <Link to='/' onClick={Auth.logout} className='p-4'>
+        <Link to='/' onClick={Auth.logout} className='p-4 hover:bg-yellow-300'>
           Logout
         </Link>
         </>
       ) : (
         <>
-        <Link to='/signup' className='p-4'>
+        <Link to='/signup' className='p-4 hover:bg-yellow-300'>
           Signup
         </Link>
-        <Link to='/login' className='p-4'>
+        <Link to='/login' className='p-4 hover:bg-yellow-300'>
           Login
         </Link>
         </>
