@@ -16,12 +16,13 @@ function RecipeItem(recipe) {
     } = recipe;
 
     return (
-      <div class="max-w-sm w-full lg:max-w-full lg:flex">
-  <img class="h-48 lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center inline-block align-middle overflow-hidden" src={`${image}`} alt="img of recipe" />
-  <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-    <div class="mb-8">
-      <div class="text-gray-900 font-bold text-xl mb-2">{title}</div>
-      <h5>
+      <div class="w-3/5 mb-4 py-4 px-8 bg-white shadow-lg rounded-lg m-20">
+  <div class="flex justify-center md:justify-end -mt-16">
+    <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500" src={`${image}`} alt="recipe pic" />
+  </div>
+  <div>
+    <h2 class="text-gray-800 text-3xl font-semibold">{title}</h2>
+    <h5>
             <u>Ingredients:</u>
           </h5>
           <ul>
@@ -32,14 +33,32 @@ function RecipeItem(recipe) {
       <hr></hr>
       <p class="mt-8"><h5><u>Instructions:</u></h5></p>
       <p class="text-gray-700 text-base">{instructions}</p>
-    </div>
-    <div class="flex items-center">
-      <div class="text-sm">
-        <p class="text-gray-900 leading-none">createdBy: </p>
-      </div>
-    </div>
   </div>
 </div>
+//       {/* <div class="max-w-sm w-full lg:max-w-full lg:flex">
+//   <img class="h-48 lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center inline-block align-middle overflow-hidden" src={`${image}`} alt="img of recipe" />
+//   <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+//     <div class="mb-8">
+//       <div class="text-gray-900 font-bold text-xl mb-2">{title}</div>
+      // <h5>
+      //       <u>Ingredients:</u>
+      //     </h5>
+      //     <ul>
+      //       {ingredients.map((ingredient) => {
+      //         return <li>{ingredient}</li>;
+      //       })}
+      //     </ul>
+      // <hr></hr>
+      // <p class="mt-8"><h5><u>Instructions:</u></h5></p>
+      // <p class="text-gray-700 text-base">{instructions}</p>
+//     </div>
+//     <div class="flex items-center">
+//       <div class="text-sm">
+//         <p class="text-gray-900 leading-none">createdBy: </p>
+//       </div>
+//     </div>
+//   </div>
+// </div> */}
 
       // <div className="card">
       //   <div className="card-body">
