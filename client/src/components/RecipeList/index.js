@@ -65,7 +65,7 @@ function RecipeList() {
 		<div className="space-y-5">
 			<Welcome />
 			<div className="flex flex-wrap content-between content-center justify-center justify-between">
-				{recipeData.map((recipe) => (
+				{recipeData.slice(0).reverse().map((recipe) => (
 					<RecipeItem
 						key={recipe.id}
 						id={recipe.id}
