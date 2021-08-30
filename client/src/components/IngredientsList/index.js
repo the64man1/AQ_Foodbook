@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, Button } from 'semantic-ui-react';
 
 function IngredientsList(ingredient) {
     const ingredients = JSON.parse(localStorage.getItem('ingredients')) || [];
@@ -21,9 +20,6 @@ function IngredientsList(ingredient) {
                 <button className="close-button" aria-label="Close alert" type="button" data-close onClick={() => handleDel(index)}>
                     <span aria-hidden="true">&times;</span>
                 </button>
-                {/* <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded col-span-1" onClick={() => handleDel(index)}>
-                Remove ingredient
-                </button> */}
                 </>
             )
         })}

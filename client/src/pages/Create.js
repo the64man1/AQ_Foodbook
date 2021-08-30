@@ -173,57 +173,6 @@ const NewRecipe = () => {
                 </div>
             </div>
         </div>
-		// <form>
-		// 	<label>
-		// 		Recipe name / title:
-		// 		<Input className="form-control" name="title" type="title" id="title" onChange={handleChange} />
-		// 	</label>
-		// 	<br />
-		// 	<label>
-		// 		Ingredients:
-		// 		<Input
-		// 			className="form-control"
-		// 			name="ingredients"
-		// 			type="ingredients"
-		// 			id="ingredients"
-		// 			value={formData.ingredients}
-		// 			onChange={handleChange}
-		// 		/>
-		// 		<Button onClick={addIngredient}>Add Ingredient</Button>
-		// 	</label>
-		// 	{errorText ? (
-		// 		<div>
-		// 			<p>{errorText}</p>
-		// 		</div>
-		// 	) : null}
-		// 	<br />
-		// 	<label>
-		// 		Ingredients List:
-		// 		<IngredientsList />
-		// 	</label>
-		// 	<br />
-		// 	<label>
-		// 		Instructions:
-		// 		<TextareaAutosize
-		// 			className="form-control"
-		// 			name="instructions"
-		// 			type="instructions"
-		// 			id="instructions"
-		// 			onChange={handleChange}
-		// 		/>
-		// 	</label>
-		// 	<br />
-			// <label>
-			// 	Please upload a picture if available:
-			// 	<Input className="form-control" name="image" type="file" id="image" onChange={handleImgUpload} />
-			// </label>
-		// 	<br />
-		// 	<div className="flex-row flex-end">
-		// 		<button type="submit" className="btn btn-primary mb-2"  onClick={handleFormSubmit}>
-		// 			Submit
-		// 		</button>
-		// 	</div>
-		// </form>
 	);
 };
 
