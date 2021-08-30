@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, Button } from 'semantic-ui-react';
 import { useMutation } from '@apollo/client';
 import { DELETE_RECIPE } from '../../utils/mutations';
 
@@ -42,13 +41,6 @@ function CreatedRecipes(recipe) {
           Delete recipe
       </button>
     </div>
-        // <Card.Content>
-        //     <p>{title}</p>
-        //     <p>{instructions}</p>
-        //     <Button className="ui button" onClick={() => handleDelete()}>
-        //     Delete Recipe
-        //     </Button>
-        // </Card.Content>
     )
 }
 

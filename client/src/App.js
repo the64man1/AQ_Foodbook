@@ -5,12 +5,11 @@ import { setContext } from "@apollo/client/link/context";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Banner from "./components/Banner";
-import Home from "./pages/Home";
 import NewRecipe from "./pages/Create";
 import RecipeList from "./components/RecipeList";
 import Nav from './components/Nav';
 import DropdownNav from "./components/DropdownNav";
-import Profile from './pages/Profile'
+import Profile from './pages/Profile';
 import { Container } from "tailwind-react-ui";
 import "semantic-ui-css/semantic.min.css";
 import { onError } from 'apollo-link-error';
