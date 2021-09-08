@@ -13,10 +13,8 @@ This project was completed using the MERN stack: React provides the front-end Ja
 
 In completing this project, we learned how to build a full-stack MERN application from scratch - from structuring the models and API request routes on the back-end, to using React components and hooks to handle user-input on the front-end.
 
+![aqfoodbook](https://user-images.githubusercontent.com/74144055/132541179-e85af343-78ac-4e33-a83c-db77ba5a2f4c.gif)
 
-![Foodbook](https://user-images.githubusercontent.com/74144055/129291701-c8bf91fb-8129-4e1e-99b6-2492140cd72d.gif)
-
-   
 ## Table of Contents
     
 - [Installation](#installation)
@@ -27,7 +25,7 @@ In completing this project, we learned how to build a full-stack MERN applicatio
     
 ## Installation
     
-To use the Foodbook, clone the repository by running "git clone `git@github.com:the64man1/Foodbook.git`' on your console. 
+To use the Foodbook, clone the repository by running "git clone `git@github.com:the64man1/AQ_Foodbook.git`' on your console. 
 
 This application requires the use of a .env file to store working environment variables for use with authentication, token and session creation. Users must create a .env file in the parent server folder and create two variables: `secret="<your-secret>"` and `expriation="2h"`, where `<your-secret>` can be customized for use with bcrpyt hashing, and `2h` can be changed to different time intervals for how long a user session will last before logoff.
 
@@ -39,7 +37,7 @@ Note: As the Foodbook uses MongoDB for database purposes, users must have MongoD
     
 Users are free to use these files to build their own Redux Store locally, or enjoy the functionality of the site on Heroku.
 
-Deployed site on Heroku: https://foodbook-app.herokuapp.com/
+Deployed site on Heroku: https://aq-foodbook.herokuapp.com/
     
 ## License
     
